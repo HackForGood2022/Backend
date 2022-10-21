@@ -5,6 +5,8 @@ import {checkFields} from "../../../lib/checkFields";
 //import CryptoJS from "crypto-js"
 
 export default async (req, res) => {
+	res.status(200).json({ result: "success", reason: "" });
+	/*
 	const message = req.body;
 	
 	const fields = ['username','password','email','salt'];
@@ -16,7 +18,7 @@ export default async (req, res) => {
 		return;
 	}
 
-	const user = await selectPlayerDB(message.username);
+	//const user = await selectPlayerDB(message.username);
 
 	// checks is the username is already taken
 	if (user == undefined) {
@@ -54,5 +56,5 @@ export default async (req, res) => {
 			result: "error",
 			reason: "user_already_registered",
 		});
-	}
+	}*/
 };

@@ -4,6 +4,24 @@ import {bestN} from "../../../lib/Friendships";
 import {checkFields} from "../../../lib/checkFields";
 
 export default async (req, res) => {
+	let ofertas = [
+		// top 4 friends with the higest score
+		{ offer: "Ganadero/a", village: "", name: "Ayelen Nuño", username: "@ayelen", picture: "https://ruralapp-backend.herokuapp.com/imgs/5a0d6cbbd22d5.jpg" },
+		{ offer: "Panadero/a", name: "Ismael Tienda", username: "@Ismati5", picture: "https://ruralapp-backend.herokuapp.com/imgs/5a0d6cbbd22d5.jpg" },
+		{ offer: "Librero/a", name: "Jaime Roncal", username: "@jaimeoncal_", picture: "https://ruralapp-backend.herokuapp.com/imgs/5a0d6cbbd22d5.jpg" },
+		{ offer: "Administrativo", name: "Raúl", username: "@raulIS", picture: "https://ruralapp-backend.herokuapp.com/imgs/5a0d6cbbd22d5.jpg" },
+		{ offer: "Carnicero/a", name: "Jaime Roncal", username: "@jaimeroncal_", picture: "https://ruralapp-backend.herokuapp.com/imgs/5a0d6cbbd22d5.jpg" },
+		{ offer: "Paisajista", name: "Ayelen Nuño", username: "@ayelen2", picture: "https://ruralapp-backend.herokuapp.com/imgs/5a0d6cbbd22d5.jpg" },
+		{ offer: "Temporeros", name: "Jorge Aranda", username: "@j_jorge", picture: "https://ruralapp-backend.herokuapp.com/imgs/5a0d6cbbd22d5.jpg" },
+		{ offer: "Ingeniero/a forestal", name: "Celia", username: "@celiaHw", picture: "https://ruralapp-backend.herokuapp.com/imgs/5a0d6cbbd22d5.jpg" },
+		{ offer: "Auxiliar de veterinaria", name: "Ruth López", username: "@ruth", picture: "https://ruralapp-backend.herokuapp.com/imgs/5a0d6cbbd22d5.jpg" },
+	];
+	res.status(200).json({
+		result: "success",
+		ofertas,
+		reason: "",
+	});
+	/*
 	const message = req.body;
 	
 	const fields = ['username','password'];
@@ -50,5 +68,5 @@ export default async (req, res) => {
 		}
 	} else {
 		res.status(200).json({ result: "error", reason: "user_not_found" });
-	}
+	}*/
 };
