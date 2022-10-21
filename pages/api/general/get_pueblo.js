@@ -5,8 +5,8 @@ import { checkFields } from "../../../lib/checkFields";
 export default async (req, res) => {
 
 	const message = req.body;
-	const img1 = "https://www.publico.es/uploads/2017/11/16/5a0d6cbbd22d5.jpg";
-	const img2 = "https://static4.depositphotos.com/1009986/292/i/450/depositphotos_2921881-stock-photo-san-miguel-de-allende.jpg";
+	const img1 = 1;
+	const img2 = 2;
 	const pueblos = ["Villanueva de Sigena","Alcolea","La puebla de Hijar","Fago","Canfranc","villanueva de sigena","alcolea","la puebla de Hijar","fago","canfranc"];
 	res.status(200).json({
 		result: "success",
