@@ -5,9 +5,9 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Comentario from './comentario'
 
-const name = 'HackForGood 2022'
+const name = 'ViveRural - HackForGood 2022'
 // Con el atributo export se puede importar desde otros sitios 
-export const siteTitle = 'RuralApp'
+export const siteTitle = 'ViveRural'
 
 // children es lo que se introduce entre los <> y home una variable 
 export default function Layout({ children, home }) {
