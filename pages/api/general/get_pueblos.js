@@ -4,15 +4,15 @@ import { checkFields } from "../../../lib/checkFields";
 
 export default async (req, res) => {
 	var pueblos = [
-		{ name: "Villanueva de Sigena", latitud: "41.715278", longitud: "-0.008889" },
-		{ name: "Alcolea", latitud: "36.966667", longitud: "-2.95" },
-		{ name: "La Puebla de Hijar", latitud: "41.213239", longitud: "-0.445625" },
-		{ name: "Fago", latitud: "42.735278", longitud: "-0.865556" },
+		{ name: "Villanueva de Sigena", latitud: "41.715278", longitud: "-0.008889", cantidad: "2" },
+		{ name: "Alcolea", latitud: "36.966667", longitud: "-2.95", cantidad: "1" },
+		{ name: "La Puebla de Hijar", latitud: "41.213239", longitud: "-0.445625", cantidad: "2" },
+		{ name: "Fago", latitud: "42.735278", longitud: "-0.865556", cantidad: "1" },
+		{ name: "Canfranc", latitud: "42.716656", longitud: "-0.525198", cantidad: "5" },
 	];
 	res.status(200).json({
 		result: "success",
-		pueblos: "https://www.publico.es/uploads/2017/11/16/5a0d6cbbd22d5.jpg",
-		descripcion: "Un pueblo muy bonico",
+		pueblos: pueblos,
 		reason: "",
 	});
 	/*

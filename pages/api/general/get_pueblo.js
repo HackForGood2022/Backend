@@ -5,14 +5,12 @@ import { checkFields } from "../../../lib/checkFields";
 export default async (req, res) => {
 
 	const message = req.body;
-	const img1 = "";
-	const img2 = "";
+	const img1 = "https://www.publico.es/uploads/2017/11/16/5a0d6cbbd22d5.jpg";
+	const img2 = "https://static4.depositphotos.com/1009986/292/i/450/depositphotos_2921881-stock-photo-san-miguel-de-allende.jpg";
 	res.status(200).json({
 		result: "success",
 		picture: message.pueblo[0]%2==1 ? img1 : img2,
-		description: message.pueblo + " es un pueblo de montaña de 204 habitantes" + 
-			+ " con amplios campos de cultivo y un ambiente relajado y afable. A" +
-			+ "su vez cuenta con una conexión 5G que permite una conexión de red rápida",
+		description: message.pueblo + " es un pueblo de montaña de 204 habitantes con amplios campos de cultivo y un ambiente relajado y afable. A su vez cuenta con una conexión 5G que permite una conexión de red rápida",
 		reason: "",
 	});
 	/*
