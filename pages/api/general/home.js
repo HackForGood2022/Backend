@@ -2,10 +2,10 @@
 export default async (req, res) => {
 	let ofertas = [
 		// top 4 friends with the higest score
-		{ offer: "Ganadero/a", village: "Villanueva de Sigena", name: "Ayelen Nuño", username: "@ayelen", picture: 2},
-		{ offer: "Panadero/a", village: "La Puebla de Hijar", name: "Ismael Tienda", username: "@Ismati5", picture: 1},
-		{ offer: "Temporeros", village: "Canfranc", name: "Jorge Aranda", username: "@j_jorge", picture: 3},
 		{ offer: "Ingeniero/a forestal", village: "Fago", name: "Celia", username: "@celiaHw", picture: 4},
+		{ offer: "Panadero/a", village: "Villanueva de Sigena", name: "Ayelen Nuño", username: "@ayelen", picture: 2},
+		{ offer: "Ganadero/a", village: "La Puebla de Hijar", name: "Ismael Tienda", username: "@Ismati5", picture: 1},
+		{ offer: "Temporeros", village: "Canfranc", name: "Jorge Aranda", username: "@j_jorge", picture: 3},
 		{ offer: "Librero/a", village: "Hoz de Barbastro", name: "Jaime Roncal", username: "@jaimeoncal_", picture: 2},
 		{ offer: "Administrativo", village: "Canfranc", name: "Raúl", username: "@raulIS", picture: 1},
 		{ offer: "Auxiliar de veterinaria", village: "La Puebla de Hijar", name: "Ruth López", username: "@ruth", picture: 5},
