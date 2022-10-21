@@ -3,19 +3,16 @@ import { selectStoriesDB } from "../../../prisma/queries/SELECT/stories";
 import { checkFields } from "../../../lib/checkFields";
 
 export default async (req, res) => {
-	var pueblos = [
-		{ name: "Villanueva de Sigena", latitud: "41.715278", longitud: "-0.008889" },
-		{ name: "Villanueva de Sigena", latitud: "41.715278", longitud: "-0.008889" },
-		{ name: "Villanueva de Sigena", latitud: "41.715278", longitud: "-0.008889" },
-	];
+
+	const message = req.body;
+	const img1 = "";
+	const img2 = "";
 	res.status(200).json({
 		result: "success",
-		pueblos: pueblos,
+		picture: message.pueblo[0]%2==1 ? img1 : img2,
 		reason: "",
 	});
 	/*
-	const message = req.body;
-
 	const fields = ["username", "password"];
 
 	const rest = checkFields(message,fields)
