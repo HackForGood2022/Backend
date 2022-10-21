@@ -2,8 +2,9 @@ import { selectPlayerDB } from "../../../prisma/queries/SELECT/player";
 import {checkFields} from "../../../lib/checkFields";
 
 export default async (req, res) => {
+	res.status(200).json({ result: "success", reason: "" });
+	/*
 	const message = req.body;
-	
 	const fields = ['username','password'];
 
 	const rest = checkFields(message,fields)
@@ -26,5 +27,5 @@ export default async (req, res) => {
 		}
 	} else {
 		res.status(200).json({ result: "error", reason: "user_not_found" });
-	}
+	}*/
 };

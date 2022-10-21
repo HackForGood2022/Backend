@@ -5,9 +5,9 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Comentario from './comentario'
 
-const name = 'Frankenstory'
+const name = 'HackForGood 2022'
 // Con el atributo export se puede importar desde otros sitios 
-export const siteTitle = 'Frankenstory'
+export const siteTitle = 'RuralApp'
 
 // children es lo que se introduce entre los <> y home una variable 
 export default function Layout({ children, home }) {
@@ -24,7 +24,7 @@ export default function Layout({ children, home }) {
         </Comentario>
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Aplicación creada por el grupo 4, célula eucariota para el Hack for Good"
         />
         <meta
           property="og:image"
