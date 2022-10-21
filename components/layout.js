@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Comentario from './comentario'
 
-const name = 'ViveRural - HackForGood 2022'
+const name = 'ViveRural'
 // Con el atributo export se puede importar desde otros sitios 
 export const siteTitle = 'ViveRural'
 
@@ -48,7 +48,6 @@ export default function Layout({ children, home }) {
             <Image
               priority
               src="/images/logo.png"
-              className={utilStyles.borderCircle}
               height={144}
               width={144}
               alt={name}
