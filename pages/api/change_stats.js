@@ -1,5 +1,5 @@
-import { updatePlayerDB } from "../../prisma/queries/PUT/player";
-import { selectPlayerDB } from "../../prisma/queries/SELECT/player";
+
+
 
 export default async (req, res) => {
 	const message = req.body;

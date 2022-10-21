@@ -1,4 +1,4 @@
-import { selectPlayerDB } from "../../../prisma/queries/SELECT/player";
+
 import {checkFields} from "../../../lib/checkFields";
 
 export default async (req, res) => {

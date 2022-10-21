@@ -1,4 +1,4 @@
-import { selectALLStoriesDB } from "../../prisma/queries/SELECT/pruebaDev_stories";
+
 
 // Al ir a http://localhost:3000/api/users te devuelve el siguiente json
 export default async (req, res) => {

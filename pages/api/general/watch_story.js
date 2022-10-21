@@ -1,6 +1,6 @@
-import { selectPlayerDB } from "../../../prisma/queries/SELECT/player";
+
 import { checkFields } from "../../../lib/checkFields";
-import { selectParagraphsDB } from "../../../prisma/queries/SELECT/paragraphs";
+
 
 export default async (req, res) => {
 	const message = req.body;

@@ -1,10 +1,10 @@
-import { createPetitionDB } from "../../../prisma/queries/CREATE/petition";
-import { createFriendshipDB } from "../../../prisma/queries/CREATE/friendship";
-import { deleteFriendshipDB } from "../../../prisma/queries/DELETE/friendship";
-import { selectPetitionDB } from "../../../prisma/queries/SELECT/petition";
-import { selectPlayerDB } from "../../../prisma/queries/SELECT/player";
-import { selectFriendshipDB } from "../../../prisma/queries/SELECT/friendship";
-import { deletePetitionDB } from "../../../prisma/queries/DELETE/petition";
+
+
+
+
+
+
+
 import {checkFields} from "../../../lib/checkFields";
 
 

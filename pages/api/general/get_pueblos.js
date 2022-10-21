@@ -1,5 +1,5 @@
-import { selectPlayerDB } from "../../../prisma/queries/SELECT/player";
-import { selectStoriesDB } from "../../../prisma/queries/SELECT/stories";
+
+
 import { checkFields } from "../../../lib/checkFields";
 
 export default async (req, res) => {

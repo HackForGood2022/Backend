@@ -1,6 +1,6 @@
-import { selectPlayerDB } from "../../../prisma/queries/SELECT/player";
-import { createFriendshipDB } from "../../../prisma/queries/CREATE/friendship";
-import { deletePetitionDB } from "../../../prisma/queries/DELETE/petition";
+
+
+
 import {checkFields} from "../../../lib/checkFields";
 
 export default async (req, res) => {
