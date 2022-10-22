@@ -5,12 +5,12 @@ import { checkFields } from "../../../lib/checkFields";
 export default async (req, res) => {
 
 	const message = req.body;
-	const img1 = 1;
+	const img1 = 2;
 	const img2 = 2;
 	const pueblos = ["Villanueva de Sigena","Alcolea","La puebla de Hijar","Fago","Canfranc","villanueva de sigena","alcolea","la puebla de Hijar","fago","canfranc"];
 	res.status(200).json({
 		result: "success",
-		trabajos: pueblos.find((p) => p == message.pueblo)!=null ? 3 : 0,
+		trabajos: pueblos[0]!=message.pueblo ? 1 : 2,
 		picture: message.pueblo[0]%2==1 ? img1 : img2,
 		description: message.pueblo + " es un pueblo de montaña de 204 habitantes con amplios campos de cultivo y un ambiente relajado y afable. A su vez cuenta con una conexión 5G que permite una conexión de red rápida",
 		reason: "",
